@@ -18,7 +18,6 @@ sql := sql.mvc();
 a:bat[:int] := sql.bind(sql, "sys", "unary", "a", 0:int);
 io.print(a);
 
-
 ```
 
 
