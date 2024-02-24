@@ -62,7 +62,7 @@ OLAP - online analytical processing
 -- Excerpt of the MAL query plan for probe query Q2
 
 -- initialize MonetDB's SQL sub-system
-sql 			:= sql.mvc();
+sql 				:= sql.mvc();
 -- access row visibility BAT (ternary) + three column BATs (a,b,c)
 ternary	:bat[:oid] 	:= sql.tid(sql, "sys", "ternary");
 
