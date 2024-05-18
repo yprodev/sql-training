@@ -63,6 +63,8 @@ WHERE 	t.a = 982;
 
 ```
 
+
+
 ---
 
 #### Impact of Updates Beyond the Row's Page
