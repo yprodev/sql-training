@@ -39,3 +39,31 @@ Spatial locality: last memory access at address `m`, next access will be at addr
 Temporal locality: last memory access at `m` at time `t`, next access at `m` will be at time `t + delta t` (`delta t` small).
 
 Memory that is relevant now, will probably be relevant in the near future -> DBMS tracks frequency and recency of memory usage. Uses both to decide whether to hold a page in fast memory.
+
+
+
+#### (Set of Queries) - Temporal Locality of References
+
+Can the DBMS benefit if the query workload (equals set of typical queries submitted to the DBMS) contains repeated data references, close in time?
+
+```sql
+SELECT t.a, t.b FROM ternary AS t;
+SELECT s.a, s.c FROM ternary AS s;
+```
+
+Set of referenced data pages overlap. We hope that I/O effort invested for earlier queries may benefit subsequent operations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
